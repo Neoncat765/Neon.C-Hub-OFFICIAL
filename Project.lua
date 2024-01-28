@@ -196,9 +196,7 @@ Section:NewButton("Made by Neoncat", "Owner: Neoncat", function()
     print("Clicked")
 end)
 
-local HereTab = Window:NewTab("Training Mode")
-
-local HereSection = Tab:NewSection("Auto Parry")
+local HereSection = Tab:NewSection("Training Mode")
 
 HereSection:NewButton("Auto Parry [TRAINING MODE ONLY]", "ButtonInfo", function()
 local Debug = false -- Set this to true if you want my debug output.
