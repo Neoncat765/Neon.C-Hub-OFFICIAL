@@ -196,9 +196,10 @@ Section:NewButton("Made by Neoncat", "Owner: Neoncat", function()
     print("Clicked")
 end)
 
-local HereSection = Tab:NewSection("Training Mode")
+local MainSection = Tab:NewSection("Training Mode")
 
-HereSection:NewButton("Auto Parry [TRAINING MODE ONLY]", "ButtonInfo", function()
+MainSection:NewToggle("Auto Parry [TRAINING MODE ONLY]", "ToggleInfo", function(state)
+    if state then
 local Debug = false -- Set this to true if you want my debug output.
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
@@ -259,16 +260,19 @@ Balls.ChildAdded:Connect(function(Ball)
         end
     end)
 end)
+    else
+        print("Toggle Off")
+    end
 end)
 
 local MainTab = Window:NewTab("💎 Socials")
 
-local MainSection = Tab:NewSection("Main")
+local Section = MainTab:NewSection("Main")
 
-MainSection:NewButton("Youtube: @justneoncat", "@justneoncat", function()
+Section:NewButton("Youtube: @justneoncat", "@justneoncat", function()
     print("Clicked")
 end)
 
-MainSection:NewButton("Discord: neoncat0502", "neoncat0502", function()
+Section:NewButton("Discord: neoncat0502", "neoncat0502", function()
     print("Clicked")
 end)
