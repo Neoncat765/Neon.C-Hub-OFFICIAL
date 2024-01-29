@@ -13,7 +13,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/
     end
 end)
 
-local Section = Tab:NewSection("Main")
 Section:NewToggle("Auto Parry V6.1 [BETTER]", "ToggleInfo", function(state) loadstring(game:HttpGet(('https://scriptblox.com/raw/Blade-Ball-Opensource-autoparry-8123'),true))()
     else
         print("Toggle Off")
