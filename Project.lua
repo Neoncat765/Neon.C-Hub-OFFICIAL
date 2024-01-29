@@ -5,11 +5,16 @@ local Window = Library.CreateLib("Neon.C Hub V6.1", "Sentinel")
 local Tab = Window:NewTab("🎯 Close Combat")
 
 local Section = Tab:NewSection("Main")
-
 Section:NewToggle("Auto Parry + Visualizer", "ToggleInfo", function(state)
     if state then getgenv().visualizer = true
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"))()
+    else
+        print("Toggle Off")
+    end
+end)
+
+local Section = Tab:NewSection("Main")
+Section:NewToggle("Auto Parry V6.1 [BETTER]", "ToggleInfo", function(state) loadstring(game:HttpGet(('https://scriptblox.com/raw/Blade-Ball-Opensource-autoparry-8123'),true))()
     else
         print("Toggle Off")
     end
