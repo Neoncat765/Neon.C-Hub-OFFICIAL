@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = Library.CreateLib("Neon.C Hub [💎]", "Sentinel")
+local Window = Library.CreateLib("Neon.C Hub V6.1", "Sentinel")
 
 local Tab = Window:NewTab("🎯 Close Combat")
 
